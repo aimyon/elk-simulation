@@ -1,0 +1,18 @@
+[
+  {
+    "id": "BCMD",
+    "type": "CMD",
+    "ent_type": "STATIC",
+    "behavior_mode": 0,
+    "team": "B",
+    "force": "LF",
+    "sensor": [
+    ],
+    "weapon": [
+    ],
+    "cost": 1.0,
+    "latitude": 23.62944,
+    "longitude": 120.36735,
+    "altitude": 0.0
+  }
+]

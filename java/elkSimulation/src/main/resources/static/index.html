@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/html">
+<meta http-equiv="Content-Type" charset="UTF-8"/>
+<head>
+    <title>My WebSocket</title>
+</head>
+
+<body>
+<button onclick="sendx()">想定</button>
+<button onclick="send1()">推时间</button>
+<button onclick="send2()">发射计划</button>
+<button onclick="send3()">机动</button>
+<button onclick="send4()">发射前10分钟准备</button>
+<button onclick="send5()">实时数据推送</button>
+<br />
+<br />
+<button onclick="send9()">倍速X1</button>
+<button onclick="send10()">倍速X5</button>
+<button onclick="send11()">倍速X10</button>
+<button onclick="send12()">倍速X15</button>
+<button onclick="send15()">倍速X100</button>
+<br />
+<br />
+<button onclick="send13()">暂停</button>
+<button onclick="send14()">开始</button>
+<br />
+<br />
+激光
+<button onclick="test(1)">天基激光状态</button>
+<button onclick="test(2)">地基激光状态</button>
+<br />
+<br />
+DN<button onclick="test(3)">天基DN（平台）状态</button>
+<button onclick="test(4)">天基DN（弹）状态</button>
+<button onclick="test(5)">地基DN（平台）状态</button>
+<button onclick="test(6)">地基DN（弹）状态</button>
+<br />
+<br />
+电子
+<button onclick="test(7)">地基电子干扰（通信）状态</button>
+<button onclick="test(8)">地基电子干扰（SAR）状态</button>
+<br />
+<br />
+测控
+<button onclick="test(9)">天基测控任务状态</button>
+<br />
+<br />
+航侦
+<button onclick="test(10)">数据下传</button>
+<button onclick="test(11)">侦察载荷状态</button>
+<br />
+<br />
+卫通
+<button onclick="test(12)">星间链路</button>
+<button onclick="test(13)">星地链路</button>
+<button onclick="test(14)">卫星状态信息</button>
+<br />
+<br />
+战环
+<button onclick="test(15)">区域气象预报</button>
+<br />
+<br />
+测控
+<button onclick="test(16)">测控任务动态报告</button>
+
+<div>
+    <a href="/home.html">下一页</a>
+</div>
+
+<div id="message"></div>
+</body>
+
+<script type="text/javascript">
+
+    // var ip = "http://21.179.180.117:8081";
+    var ip = "http://127.0.0.1:8081";
+    function sendx() {
+        var xthttp = new XMLHttpRequest();
+        xthttp.open("GET",ip + "/admin/xiangding",true);
+        xthttp.send();
+    }
+
+    function send1() {
+        var xthttp = new XMLHttpRequest();
+        xthttp.open("GET",ip + "/admin/timeTest",true);
+        xthttp.send();
+    }
+    function send2() {
+        var xthttp = new XMLHttpRequest();
+        xthttp.open("GET",ip + "/admin/fashePlan",true);
+        xthttp.send();
+    }
+    function send3() {
+        var xthttp = new XMLHttpRequest();
+        xthttp.open("GET",ip + "/admin/jidong",true);
+        xthttp.send();
+    }
+    function send4() {
+        var xthttp = new XMLHttpRequest();
+        xthttp.open("GET",ip + "/admin/zhubeiu",true);
+        xthttp.send();
+    }
+    function send5() {
+        var xthttp = new XMLHttpRequest();
+        xthttp.open("GET",ip + "/admin/sendPlanFashe",true);
+        xthttp.send();
+    }
+
+    function send13() {
+        var xthttp = new XMLHttpRequest();
+        xthttp.open("GET",ip + "/admin/button",true);
+        xthttp.send();
+    }
+    function send14() {
+        var xthttp = new XMLHttpRequest();
+        xthttp.open("GET",ip + "/admin/start",true);
+        xthttp.send();
+    }
+
+    function send9() {
+        var xthttp = new XMLHttpRequest();
+        xthttp.open("GET",ip + "/admin/sendSpeed?speed=1",true);
+        xthttp.send();
+    }
+    function send10() {
+        var xthttp = new XMLHttpRequest();
+        xthttp.open("GET",ip + "/admin/sendSpeed?speed=5",true);
+        xthttp.send();
+    }
+    function send11() {
+        var xthttp = new XMLHttpRequest();
+        xthttp.open("GET",ip + "/admin/sendSpeed?speed=10",true);
+        xthttp.send();
+    }
+    function send12() {
+        var xthttp = new XMLHttpRequest();
+        xthttp.open("GET",ip + "/admin/sendSpeed?speed=15",true);
+        xthttp.send();
+    }
+    function send15() {
+        var xthttp = new XMLHttpRequest();
+        xthttp.open("GET",ip + "/admin/sendSpeed?speed=100",true);
+        xthttp.send();
+    }
+    function test(num) {
+        var xthttp = new XMLHttpRequest();
+        xthttp.open("GET",ip + "/admin/sendCmd?num="+num,true);
+        xthttp.send();
+    }
+
+
+</script>
+</html>

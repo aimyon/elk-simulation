@@ -1,0 +1,144 @@
+[
+  {
+    "id": "RT1",
+    "executor_id": "RDD2",
+    "target_id": "",
+    "type": "PATROL",
+    "effectiveness": 0.65,
+    "route": [
+      "6.245083, -20.177556",
+      "9.555264, -16.561659",
+      "3.814387, -15.123178"
+    ],
+    "required_weapon": [
+    ]
+  },
+  {
+    "id": "RT2",
+    "executor_id": "RFIG1",
+    "target_id": "",
+    "type": "PATROL",
+    "effectiveness": 0.65,
+    "route": [
+      "7.995796, -14.022978",
+      "8.722812, -13.183272",
+      "8.391209, -12.965699"
+    ],
+    "required_weapon": [
+    ]
+  },
+  {
+    "id": "RT3",
+    "executor_id": "RFIG2",
+    "target_id": "",
+    "type": "PATROL",
+    "effectiveness": 0.65,
+    "route": [
+      "7.995796, -14.022978",
+      "8.722812, -13.183272",
+      "8.391209, -12.965699"
+    ],
+    "required_weapon": [
+    ]
+  },
+  {
+    "id": "RT4",
+    "executor_id": "RFIG3",
+    "target_id": "",
+    "type": "PATROL",
+    "effectiveness": 0.65,
+    "route": [
+      "8.746431, -13.142182",
+      "8.571011, -11.155843",
+      "7.009972, -10.391161"
+    ],
+    "required_weapon": [
+    ]
+  },
+  {
+    "id": "RT5",
+    "executor_id": "RFIG4",
+    "target_id": "",
+    "type": "PATROL",
+    "effectiveness": 0.65,
+    "route": [
+      "8.746431, -13.142182",
+      "8.571011, -11.155843",
+      "7.009972, -10.391161"
+    ],
+    "required_weapon": [
+    ]
+  },
+  {
+    "id": "RT6",
+    "executor_id": "RFIG5",
+    "target_id": "BCMD1",
+    "type": "ATTACK",
+    "effectiveness": 0.65,
+    "route": [
+      "7.653842, -11.532073"
+    ],
+    "required_weapon": [
+      "MISSILE",
+      "BOMB"
+    ]
+  },
+  {
+    "id": "RT7",
+    "executor_id": "RFIG6",
+    "target_id": "BCMD1",
+    "type": "ATTACK",
+    "effectiveness": 0.65,
+    "route": [
+      "7.653842, -11.532073"
+    ],
+    "required_weapon": [
+      "MISSILE",
+      "BOMB"
+    ]
+  },
+  {
+    "id": "RT8",
+    "executor_id": "RHEL1",
+    "target_id": "",
+    "type": "PATROL",
+    "effectiveness": 0.65,
+    "route": [
+      "8.617520, -12.945881",
+      "8.159744, -12.911140",
+      "8.716687, -11.634439"
+    ],
+    "required_weapon": [
+    ]
+  },
+  {
+    "id": "RT9",
+    "executor_id": "RUAV1",
+    "target_id": "BAT1",
+    "type": "ATTACK",
+    "effectiveness": 0.65,
+    "route": [
+      "9.041550, -11.709092",
+      "8.136002, -11.020972"
+    ],
+    "required_weapon": [
+      "MISSILE",
+      "BOMB"
+    ]
+  },
+  {
+    "id": "RT10",
+    "executor_id": "RUAV2",
+    "target_id": "BAT1",
+    "type": "ATTACK",
+    "effectiveness": 0.65,
+    "route": [
+      "9.041550, -11.709092",
+      "8.136002, -11.020972"
+    ],
+    "required_weapon": [
+      "MISSILE",
+      "BOMB"
+    ]
+  }
+]

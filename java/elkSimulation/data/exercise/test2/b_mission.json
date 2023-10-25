@@ -1,0 +1,134 @@
+[
+  {
+    "id":"BT1",
+    "executor_id": "BAIRDEFENSE1",
+    "target_id":"",
+    "type": "DEFENCE",
+    "effectiveness":0.65,
+    "set_time":100,
+    "route":[
+    ],
+    "required_weapon":[
+      "MISSILE"
+    ]
+  },
+  {
+    "id":"BT2",
+    "executor_id": "BDESTROYER1",
+    "target_id":"",
+    "type": "MOVE",
+    "effectiveness":0.65,
+    "set_time":100,
+    "route":[
+      "32.55675,127.40959",
+      "26.56343,126.04971",
+      "25.02662,122.67257"
+    ],
+    "required_weapon":[
+    ]
+  },
+  {
+    "id":"BT3",
+    "executor_id": "BDESTROYER2",
+    "target_id":"",
+    "type": "MOVE",
+    "effectiveness":0.65,
+    "set_time":100,
+    "route":[
+      "32.58239,127.36595",
+      "26.63031,125.93187",
+      "25.14046,122.69141"
+    ],
+    "required_weapon":[
+    ]
+  },
+  {
+    "id":"BT4",
+    "executor_id": "BDESTROYER3",
+    "target_id":"",
+    "type": "MOVE",
+    "effectiveness":0.65,
+    "set_time":100,
+    "route":[
+      "32.52615,127.46559",
+      "26.51681,126.19284",
+      "24.89721,122.91456"
+    ],
+    "required_weapon":[
+    ]
+  },
+  {
+    "id":"BT5",
+    "executor_id": "BDESTROYER4",
+    "target_id":"",
+    "type": "MOVE",
+    "effectiveness":0.65,
+    "set_time":100,
+    "route":[
+      "32.54145,127.43587",
+      "26.56084,126.11013",
+      "24.99454,122.69777"
+    ],
+    "required_weapon":[
+    ]
+  },
+  {
+    "id":"BT6",
+    "executor_id": "BCRUISER1",
+    "target_id":"",
+    "type": "MOVE",
+    "effectiveness":0.65,
+    "set_time":100,
+    "route":[
+      "32.59087,127.41606",
+      "26.60492,125.98777",
+      "25.13739,122.79208"
+    ],
+    "required_weapon":[
+    ]
+  },
+  {
+    "id":"BT7",
+    "executor_id": "BCRUISER2",
+    "target_id":"",
+    "type": "MOVE",
+    "effectiveness":0.65,
+    "set_time":100,
+    "route":[
+      "32.55582,127.48115",
+      "26.53993,126.14834",
+      "25.00734,122.88945"
+    ],
+    "required_weapon":[
+    ]
+  },
+  {
+    "id":"BT8",
+    "executor_id": "BCV",
+    "target_id":"",
+    "type": "MOVE",
+    "effectiveness":0.65,
+    "set_time":100,
+    "route":[
+      "32.57587,127.45732",
+      "26.59762,126.08706",
+      "25.13399,122.94051"
+
+    ],
+    "required_weapon":[
+    ]
+  },
+  {
+    "id":"BT11",
+    "executor_id": "BAIRDEFENSE2",
+    "target_id":"",
+    "type": "DEFENCE",
+    "effectiveness":0.65,
+    "set_time":100,
+    "route":[
+    ],
+    "required_weapon":[
+      "MISSILE"
+    ]
+  }
+]

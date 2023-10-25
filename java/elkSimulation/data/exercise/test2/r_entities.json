@@ -1,0 +1,119 @@
+[
+  {
+    "id": "RFIG1",
+    "type": "FIGHTER",
+    "ent_type": "DYNAMIC",
+    "behavior_mode": 2,
+    "team": "R",
+    "force": "AF",
+    "sensor": [
+      "AIR_RADAR_T2_FIGHTER"
+    ],
+    "weapon": [
+      "SMT1:4",
+      "BT2:4",
+      "ACT2:2"
+    ],
+    "cost": 0.98,
+    "latitude": 35.51063,
+    "longitude": 115.56735,
+    "altitude": 0.00
+  },
+  {
+    "id": "RFIG2",
+    "type": "FIGHTER",
+    "ent_type": "DYNAMIC",
+    "behavior_mode": 2,
+    "team": "R",
+    "force": "AF",
+    "sensor": [
+      "AIR_RADAR_T2_FIGHTER"
+    ],
+    "weapon": [
+      "SMT1:4",
+      "BT2:4",
+      "ACT2:2"
+    ],
+    "cost": 0.98,
+    "latitude": 35.51063,
+    "longitude": 115.56735,
+    "altitude": 0.00
+  },
+  {
+    "id": "RFIG3",
+    "type": "FIGHTER",
+    "ent_type": "DYNAMIC",
+    "behavior_mode": 2,
+    "team": "R",
+    "force": "AF",
+    "sensor": [
+      "AIR_RADAR_T2_FIGHTER"
+    ],
+    "weapon": [
+      "SMT1:4",
+      "BT2:4",
+      "ACT2:2"
+    ],
+    "cost": 0.98,
+    "latitude": 35.51063,
+    "longitude": 115.56735,
+    "altitude": 0.00
+  },
+  {
+    "id": "RFIG4",
+    "type": "FIGHTER",
+    "ent_type": "DYNAMIC",
+    "behavior_mode": 2,
+    "team": "R",
+    "force": "AF",
+    "sensor": [
+      "AIR_RADAR_T2_FIGHTER"
+    ],
+    "weapon": [
+      "SMT1:4",
+      "BT2:4",
+      "ACT2:2"
+    ],
+    "cost": 0.98,
+    "latitude": 35.51063,
+    "longitude": 115.56735,
+    "altitude": 0.00
+  },
+  {
+    "id": "RFIG5",
+    "type": "FIGHTER",
+    "ent_type": "DYNAMIC",
+    "behavior_mode": 2,
+    "team": "R",
+    "force": "AF",
+    "sensor": [
+      "AIR_RADAR_T2_FIGHTER"
+    ],
+    "weapon": [
+      "SMT1:4",
+      "BT2:4",
+      "ACT2:2"
+    ],
+    "cost": 0.98,
+    "latitude": 35.51063,
+    "longitude": 115.56735,
+    "altitude": 0.00
+  },
+  {
+    "id": "RAS",
+    "type": "AS",
+    "ent_type": "DYNAMIC",
+    "behavior_mode": 0,
+    "team": "R",
+    "force": "AF",
+    "sensor": [
+      "AIR_RADAR_T3_EW"
+    ],
+    "weapon": [
+    ],
+    "cost": 0.46,
+    "latitude": 35.51063,
+    "longitude": 115.56735,
+    "altitude": 0.00
+  }
+]

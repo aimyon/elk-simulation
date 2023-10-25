@@ -1,0 +1,208 @@
+[
+  {
+    "id": "BT1",
+    "executor_id": "BFIG1",
+    "target_id": "RDD1",
+    "type": "ATTACK",
+    "effectiveness": 0.65,
+    "route": [
+      "7.583233, -13.673335"
+    ],
+    "required_weapon": [
+      "MISSILE",
+      "BOMB"
+    ]
+  },
+  {
+    "id":"BT2",
+    "executor_id": "BFIG1",
+    "target_id":"RDD2",
+    "type": "ATTACK",
+    "effectiveness":0.65,
+    "route":[
+    ],
+    "required_weapon":[
+      "MISSILE",
+      "BOMB"
+    ]
+  },
+  {
+    "id":"BT3",
+    "executor_id": "BFIG2",
+    "target_id":"RDD1",
+    "type": "ATTACK",
+    "effectiveness":0.65,
+    "route":[
+      "7.583233, -13.673335"
+    ],
+    "required_weapon":[
+      "MISSILE",
+      "BOMB"
+    ]
+  },
+  {
+    "id":"BT4",
+    "executor_id": "BFIG2",
+    "target_id":"RDD2",
+    "type": "ATTACK",
+    "effectiveness":0.65,
+    "route":[
+    ],
+    "required_weapon":[
+      "MISSILE",
+      "BOMB"
+    ]
+  },
+  {
+    "id":"BT5",
+    "executor_id": "BFIG3",
+    "target_id":"RFIG6",
+    "type": "ATTACK",
+    "effectiveness":0.65,
+    "route":[
+
+    ],
+    "required_weapon":[
+      "MISSILE",
+      "BOMB"
+    ]
+  },
+  {
+    "id":"BT6",
+    "executor_id": "BFIG3",
+    "target_id":"RFIG7",
+    "type": "ATTACK",
+    "effectiveness":0.65,
+    "route":[
+    ],
+    "required_weapon":[
+      "MISSILE",
+      "BOMB"
+    ]
+  },
+  {
+    "id":"BT7",
+    "executor_id": "BFIG3",
+    "target_id":"RCMD",
+    "type": "ATTACK",
+    "effectiveness":0.65,
+    "route":[
+    ],
+    "required_weapon":[
+      "MISSILE",
+      "BOMB"
+    ]
+  },
+  {
+    "id":"BT8",
+    "executor_id": "BFIG4",
+    "target_id":"RARTILL",
+    "type": "ATTACK",
+    "effectiveness":0.65,
+    "route":[
+
+    ],
+    "required_weapon":[
+      "MISSILE",
+      "BOMB"
+    ]
+  },
+  {
+    "id":"BT9",
+    "executor_id": "BFIG4",
+    "target_id":"RINFRA",
+    "type": "ATTACK",
+    "effectiveness":0.65,
+    "route":[
+    ],
+    "required_weapon":[
+      "MISSILE",
+      "BOMB"
+    ]
+  },
+  {
+    "id":"BT10",
+    "executor_id": "BFIG4",
+    "target_id":"RCMD",
+    "type": "ATTACK",
+    "effectiveness":0.65,
+    "route":[
+    ],
+    "required_weapon":[
+      "MISSILE",
+      "BOMB"
+    ]
+  },
+  {
+    "id":"BT11",
+    "executor_id": "BFIG5",
+    "target_id":"RADEF",
+    "type": "ATTACK",
+    "effectiveness":0.65,
+    "route":[
+
+    ],
+    "required_weapon":[
+      "MISSILE",
+      "BOMB"
+    ]
+  },
+  {
+    "id":"BT12",
+    "executor_id": "BFIG5",
+    "target_id":"RGUN",
+    "type": "ATTACK",
+    "effectiveness":0.65,
+    "route":[
+    ],
+    "required_weapon":[
+      "MISSILE",
+      "BOMB"
+    ]
+  },
+  {
+    "id":"BT13",
+    "executor_id": "BFIG6",
+    "target_id":"RADEF",
+    "type": "ATTACK",
+    "effectiveness":0.65,
+    "route":[
+
+    ],
+    "required_weapon":[
+      "MISSILE",
+      "BOMB"
+    ]
+  },
+  {
+    "id":"BT14",
+    "executor_id": "BFIG6",
+    "target_id":"RGUN",
+    "type": "ATTACK",
+    "effectiveness":0.65,
+    "route":[
+    ],
+    "required_weapon":[
+      "MISSILE",
+      "BOMB"
+    ]
+  },
+  {
+    "id":"BT15",
+    "executor_id": "BUAV1",
+    "target_id":"",
+    "type": "PATROL",
+    "effectiveness":0.65,
+    "route":[
+      "9.059224, -10.043353",
+      "7.206878, -11.390927",
+      "7.152454, -11.646360"
+
+    ],
+    "required_weapon":[
+      "MISSILE",
+      "BOMB"
+    ]
+  }
+
+]

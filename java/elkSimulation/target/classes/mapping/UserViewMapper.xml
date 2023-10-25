@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--所实现的接口全限定名-->
+<mapper namespace="com.sfxt.xtts.dao.ourDm.UserViewDao">
+    <resultMap id="base_map" type="com.sfxt.xtts.vo.base.ViewDataVo">
+        <result column="USERNAME" property="userName"/>
+        <result column="VIEWINFO" property="viewInfo"/>
+    </resultMap>
+    <sql id="base_sql">
+        USERNAME,
+        VIEWINFO
+    </sql>
+    <!--查询单个-->
+    <select id="getUserViewByUserName" resultMap="base_map">
+        select
+        <include refid="base_sql"/>
+        from "SYSDBA"."T_USER_VIEW" where USERNAME=#{userName};
+    </select>
+
+    <!--增加-->
+    <insert id="addUserView">
+        insert into "SYSDBA"."T_USER_VIEW" (USERNAME,VIEWINFO) values (#{userName},#{viewInfo})
+    </insert>
+
+    <!--删除-->
+    <delete id="deleteUserViewByUserName">
+        delete  from "SYSDBA"."T_USER_VIEW" where USERNAME=#{userName}
+    </delete>
+
+    <!--修改-->
+    <update id="updateUserView">
+        update "SYSDBA"."T_USER_VIEW"set VIEWINFO=#{viewInfo} where USERNAME=#{userName}
+    </update>
+
+</mapper>
+
+
+
+

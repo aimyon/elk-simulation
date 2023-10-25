@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--所实现的接口全限定名-->
+<mapper namespace="com.sfxt.xtts.dao.ourDm.WhiteDmDao">
+    <resultMap id="base_map" type="com.sfxt.xtts.vo.searchPlan.SearchPlan">
+        <result column="ID" property="numId"/>
+        <result column="SID" property="sid"/>
+        <result column="BID" property="bid"/>
+        <result column="RECIVETIME" property="reciveTime"/>
+        <result column="TYPE" property="type"/>
+        <result column="DATA" property="data"/>
+    </resultMap>
+    <sql id="base_sql">
+        ID,
+        SID,
+        BID,
+        RECIVETIME,
+        TYPE
+    </sql>
+    <select id="staticByIdTime" resultType="java.util.HashMap">
+        <choose>
+            <when test="SID != null and SID != ''">
+                select BID as key, COUNT(*) as value
+                from "SYSDBA"."SEARCHPLAN"
+            </when>
+            <otherwise>
+                select SID as key, COUNT(*) as value
+                from "SYSDBA"."SEARCHPLAN"
+            </otherwise>
+        </choose>
+
+        <where>
+            <if test="startTime != null and startTime !=''">
+                and RECIVETIME >= DATE_FORMAT(#{startTime}, '%Y-%m-%d %H:%i:%S')
+            </if>
+            <if test="endTime != null and endTime !=''">
+                and DATE_FORMAT(#{endTime}, '%Y-%m-%d %H:%i:%S') >= RECIVETIME
+            </if>
+            <if test="SID != null and SID != ''">
+                and SID = #{SID}
+            </if>
+        </where>
+        <choose>
+            <when test="SID != null and SID != ''">
+                group by BID
+            </when>
+            <otherwise> group by SID</otherwise>
+        </choose>
+    </select>
+    <!--查询单个-->
+    <select id="findSearchPlanById" resultMap="base_map">
+        select
+        <include refid="base_sql"/>, data
+        from "SYSDBA"."SEARCHPLAN" where id=#{id};
+    </select>
+    <!--查询-->
+    <select id="getSearchPlans" resultMap="base_map">
+        select
+        <include refid="base_sql"/>
+        from "SYSDBA"."SEARCHPLAN"
+        <where>
+            <if test="startTime != null and startTime !=''">
+                and RECIVETIME >= DATE_FORMAT(#{startTime}, '%Y-%m-%d %H:%i:%S')
+            </if>
+            <if test="endTime != null and endTime !=''">
+                and DATE_FORMAT(#{endTime}, '%Y-%m-%d %H:%i:%S') >= RECIVETIME
+            </if>
+            <if test="SID != null and SID !=''">
+                <choose>
+                    <when test="SID=='37520300'">and (SID = '37520300' or SID = '37410100' )</when>
+                    <otherwise>and SID = #{SID}</otherwise>
+                </choose>
+            </if>
+        </where>
+        order by RECIVETIME
+    </select>
+</mapper>
+
+
+
+

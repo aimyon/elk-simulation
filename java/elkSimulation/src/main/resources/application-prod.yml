@@ -1,0 +1,91 @@
+file:
+  #测试数据路径
+  test:
+    filePath: /opt/xtck/test/
+  #回放文件存储路径
+  playBack:
+    storageFilePath: /opt/xtck/history/
+
+#  test:
+#    filePath: C:/Users/admin/Desktop/tky/
+#  #回放文件存储路径
+#  playBack:
+#    storageFilePath: C:/Users/admin/Desktop/tyk/回放记录文件/
+
+socketio:
+
+  host: 21.179.179.81 #部署
+#  host: 21.179.180.117 #部署
+#  host: 192.168.1.110 #本地
+#  host: 192.168.1.16 #本地
+  port: 8989
+  receive: 23418
+  # 设置最大每帧处理数据的长度，防止他人利用大数据来攻击服务器
+  maxFramePayloadLength: 1048576
+  # 设置http交互最大内容长度
+  maxHttpContentLength: 1048576
+  # socket连接数大小（如只监听一个端口boss线程组为1即可）
+  bossCount: 1
+  workCount: 100
+  allowCustomRequests: true
+  # 协议升级超时时间（毫秒），默认10秒。HTTP握手升级为ws协议超时时间
+  upgradeTimeout: 1000000
+  # Ping消息超时时间（毫秒），默认60秒，这个时间间隔内没有接收到心跳消息就会发送超时事件
+  pingTimeout: 6000000
+  # Ping消息间隔（毫秒），默认25秒。客户端向服务器发送一条心跳消息间隔
+  pingInterval: 25000
+spring:
+  datasource:
+    ourDm:
+      #      driver-class-name: dm.jdbc.driver.DmDriver
+      #      jdbc-url: jdbc:dm://21.179.179.81:5236/SYSDBA?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+      ##      jdbc-url: jdbc:dm://21.179.180.117:5236/SYSDBA?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+      #      username: SYSDBA
+      ##      password: dameng123
+      ##      password: 123456789
+      #      password: SYSDBA
+      #    whiteDm:
+      driver-class-name: dm.jdbc.driver.DmDriver
+      #      jdbc-url: jdbc:dm://192.168.1.106:5236/SYSDBA?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+      jdbc-url: jdbc:dm://21.179.179.126:5236/SYSDBA?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+      username: SYSDBA
+      password: SYSDBA
+#      jdbc-url: jdbc:dm://192.168.1.17:5236/SYSDBA?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+#      username: SYSDBA
+#      password: dameng123
+
+
+
+#spring:
+#  datasource:
+#    ourDm:
+#      driver-class-name: dm.jdbc.driver.DmDriver
+#      jdbc-url: jdbc:dm://21.179.179.81:5236/SYSDBA?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+#      username: SYSDBA
+#      #      password: dameng123
+#      password: SYSDBA
+#    whiteDm:
+#      driver-class-name: dm.jdbc.driver.DmDriver
+#      #      jdbc-url: jdbc:dm://192.168.1.106:5236/SYSDBA?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+#      jdbc-url: jdbc:dm://21.179.179.126:5236/SYSDBA?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+#      username: SYSDBA
+#      password: SYSDBA
+#      jdbc-url: jdbc:dm://192.168.1.17:5236/SYSDBA?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+#      username: SYSDBA
+#      password: dameng123
+
+
+
+
+
+
+bianyuan:
+#  path: http://192.168.1.112:18091
+  path: http://21.179.179.65:18091
+
+huaru:
+#  path: http://192.168.1.106:10007
+  path: http://21.179.179.126:10007
+login:
+  path: 21.179.179.65:18080
+

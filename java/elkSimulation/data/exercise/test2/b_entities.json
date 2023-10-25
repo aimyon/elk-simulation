@@ -1,0 +1,192 @@
+[
+  {
+    "id": "BCMD",
+    "type": "CMD",
+    "ent_type": "STATIC",
+    "behavior_mode": 0,
+    "team": "B",
+    "force": "LF",
+    "sensor": [
+    ],
+    "weapon": [
+    ],
+    "cost": 1.0,
+    "latitude": 23.62944,
+    "longitude": 120.36735,
+    "altitude": 0.0
+  },
+  {
+    "id": "BDESTROYER1",
+    "type": "DESTROYER",
+    "ent_type": "DYNAMIC",
+    "behavior_mode": 1,
+    "team": "B",
+    "force": "SS",
+    "sensor": [
+      "SEA_RADAR_T1"
+    ],
+    "weapon": [
+      "ACT1:300",
+      "SMT1:20",
+      "SMT2:30"
+    ],
+    "cost": 1.0,
+    "latitude": 33.8092,
+    "longitude": 129.36680,
+    "altitude": 0.0
+  },
+  {
+    "id": "BDESTROYER2",
+    "type": "DESTROYER",
+    "ent_type": "DYNAMIC",
+    "behavior_mode": 1,
+    "team": "B",
+    "force": "SS",
+    "sensor": [
+      "SEA_RADAR_T1"
+    ],
+    "weapon": [
+      "ACT1:300",
+      "SMT1:20",
+      "SMT2:30"
+    ],
+    "cost": 1.0,
+    "latitude": 33.85532,
+    "longitude": 129.35363,
+    "altitude": 0.0
+  },
+  {
+    "id": "BDESTROYER3",
+    "type": "DESTROYER",
+    "ent_type": "DYNAMIC",
+    "behavior_mode": 1,
+    "team": "B",
+    "force": "SS",
+    "sensor": [
+      "SEA_RADAR_T1"
+    ],
+    "weapon": [
+      "ACT1:300",
+      "SMT1:20",
+      "SMT2:30"
+    ],
+    "cost": 1.0,
+    "latitude": 33.76075,
+    "longitude": 129.43102,
+    "altitude": 0.0
+  },
+  {
+    "id": "BDESTROYER4",
+    "type": "DESTROYER",
+    "ent_type": "DYNAMIC",
+    "behavior_mode": 1,
+    "team": "B",
+    "force": "SS",
+    "sensor": [
+      "SEA_RADAR_T1"
+    ],
+    "weapon": [
+      "ACT1:300",
+      "SMT1:20",
+      "SMT2:30"
+    ],
+    "cost": 1.0,
+    "latitude": 33.78947,
+    "longitude": 129.38834,
+    "altitude": 0.0
+  },
+  {
+    "id": "BCRUISER1",
+    "type": "CRUISER",
+    "ent_type": "DYNAMIC",
+    "behavior_mode": 1,
+    "team": "B",
+    "force": "SS",
+    "sensor": [
+      "SEA_RADAR_T1"
+    ],
+    "weapon": [
+      "ACT1:300",
+      "SMT1:20",
+      "SMT2:30"
+    ],
+    "cost": 1.0,
+    "latitude": 33.84436,
+    "longitude": 129.38514,
+    "altitude": 0.0
+  },
+  {
+    "id": "BCRUISER2",
+    "type": "CRUISER",
+    "ent_type": "DYNAMIC",
+    "behavior_mode": 1,
+    "team": "B",
+    "force": "SS",
+    "sensor": [
+      "SEA_RADAR_T1"
+    ],
+    "weapon": [
+      "ACT1:300",
+      "SMT1:20",
+      "SMT2:30"
+    ],
+    "cost": 1.0,
+    "latitude": 33.80061,
+    "longitude": 129.42767,
+    "altitude": 0.0
+  },
+  {
+    "id": "BCV",
+    "type": "CARRIERVESSEL",
+    "ent_type": "DYNAMIC",
+    "behavior_mode": 1,
+    "team": "B",
+    "force": "SS",
+    "sensor": [
+      "SEA_RADAR_T2"
+    ],
+    "weapon": [
+      "SMT2:30"
+    ],
+    "cost": 1.0,
+    "latitude": 33.83104,
+    "longitude": 129.41497,
+    "altitude": 0.0
+  },
+  {
+    "id": "BAIRDEFENSE1",
+    "type": "AIRDEFENSE",
+    "ent_type": "STATIC",
+    "behavior_mode": 1,
+    "team": "B",
+    "force": "lf",
+    "sensor": [
+      "LAND_RADAR_T1"
+    ],
+    "weapon": [
+      "LMT1:4"
+    ],
+    "cost": 0.5,
+    "latitude": 23.90248,
+    "longitude": 120.31152,
+    "altitude": 0.0
+  },
+  {
+    "id": "BAIRDEFENSE2",
+    "type": "AIRDEFENSE",
+    "ent_type": "STATIC",
+    "behavior_mode": 1,
+    "team": "B",
+    "force": "lf",
+    "sensor": [
+      "LAND_RADAR_T2"
+    ],
+    "weapon": [
+      "LMT2:6"
+    ],
+    "cost": 0.5,
+    "latitude": 23.28507,
+    "longitude": 120.28485,
+    "altitude": 0.0
+  }
+]

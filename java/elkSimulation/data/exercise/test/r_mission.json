@@ -1,0 +1,16 @@
+[
+  {
+    "id":"RT1",
+    "executor_id": "RFIG1",
+    "target_id":"BCMD",
+    "type": "ATTACK",
+    "effectiveness":0.65,
+    "set_time":100,
+    "route":[
+    ],
+    "required_weapon":[
+      "MISSILE",
+      "BOMB"
+    ]
+  }
+]

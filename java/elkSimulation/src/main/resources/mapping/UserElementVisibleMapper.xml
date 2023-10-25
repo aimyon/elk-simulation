@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--所实现的接口全限定名-->
+<mapper namespace="com.sfxt.xtts.dao.ourDm.UserElementVisibleDao">
+    <resultMap id="base_map" type="com.sfxt.xtts.vo.base.VisibleDataVo">
+        <result column="USERNAME" property="userName"/>
+        <result column="VISIBLEINFO" property="visibleInfo"/>
+    </resultMap>
+    <sql id="base_sql">
+        USERNAME,
+        VISIBLEINFO
+    </sql>
+    <!--查询单个-->
+    <select id="getUserElementVisibleByUserName" resultMap="base_map">
+        select
+        <include refid="base_sql"/>
+        from "SYSDBA"."T_USER_ELEMENT_VISIBLE" where USERNAME=#{userName};
+    </select>
+
+    <!--增加-->
+    <insert id="addUserElementVisible">
+        insert into "SYSDBA"."T_USER_ELEMENT_VISIBLE" (USERNAME,VISIBLEINFO) values (#{userName},#{visibleInfo})
+    </insert>
+
+    <!--删除-->
+    <delete id="deleteUserElementVisibleByUserName">
+        delete  from "SYSDBA"."T_USER_ELEMENT_VISIBLE" where USERNAME=#{userName}
+    </delete>
+
+    <!--修改-->
+    <update id="updateUserElementVisible">
+        update "SYSDBA"."T_USER_ELEMENT_VISIBLE"set visibleInfo=#{visibleInfo} where USERNAME=#{userName}
+    </update>
+
+</mapper>
+
+
+
+
