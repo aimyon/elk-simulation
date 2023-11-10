@@ -19,9 +19,9 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">"完美的"README模板</h3>
+  <h3 align="center">"完整的"仿真推演引擎</h3>
   <p align="center">
-    一个"完美的"README模板去快速开始你的项目！
+    一个事件与时间驱动结合的开源推演引擎！
     <br />
     <a href="https://github.com/shaojintian/Best_README_template"><strong>探索本项目的文档 »</strong></a>
     <br />
